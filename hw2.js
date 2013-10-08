@@ -37,9 +37,10 @@ var email = 'okotenev@montgomerycollege.edu',
 	pi = 3.14159,
 	bookCost = 10.05,
 	lightSwitch = true,
-	superman = true
+	supermanCanFly = true; //JG: I'm using a slightly more descriptive Boolean variable name.
+//JG: I like the multi-line approach you took here. Just remember to include the semi-colon at the end.
 
-console.log(email, major, textEditor, zipCode, pi, bookCost, lightSwitch, superman);
+console.log(email, major, textEditor, zipCode, pi, bookCost, lightSwitch, supermanCanFly);
 
 
 // Problem 3) Use the typeof operator to determine the data type of each variable like so.
@@ -48,7 +49,17 @@ console.log(email, major, textEditor, zipCode, pi, bookCost, lightSwitch, superm
 	// and so on…
 	// Make sure you have at least one string, at least one number, and at least one Boolean.
 
-console.log(typeof email, typeof major, typeof textEditor, typeof zipCode, typeof pi, typeof bookCost, typeof lightSwitch, typeof superman);
+//JG: Breaking it up onto multiple lines makes it easier to read
+console.log(
+	typeof email, 
+	typeof major, 
+	typeof textEditor, 
+	typeof zipCode, 
+	typeof pi, 
+	typeof bookCost, 
+	typeof lightSwitch, 
+	typeof supermanCanFly
+);
 
 
 // Problem 4) Create string variables to store the following string values.
@@ -61,12 +72,13 @@ var a = "The dog's biting my shoes",
 	b = '<a href="#">Some link</a>',
 	c = 'JavaScript is "easy" if you are good at it'
 
-console.log(a, b, c);
+console.log(a, b, c); //JG: Nice!
 
 
 // Problem 5) Create an array of topics you would like to learn this semester.
 // Send this array to the console.
 
+//JG: Something awesome as in doing 3D graphics?
 var toLearn = ['Javascript', 'jQuery', 'Something awesome about the world']
 
 console.log(toLearn);
@@ -77,9 +89,9 @@ console.log(toLearn);
 	// console.log(myArray[1])
 	// and so on…
 
-console.log(toLearn [0]);
-console.log(toLearn [1]);
-console.log(toLearn [2]);
+console.log(toLearn[0]);
+console.log(toLearn[1]);
+console.log(toLearn[2]);
 
 // Problem 7) Use the yourArrayVariable.length property to determine the size of your array.
 // Send the result to the console.
@@ -93,6 +105,7 @@ console.log(toLearn.length);
 	// a similar way to how we did it in class for the currency conversion
 	// calculator.
 
+//JG: Looks good
 document.getElementById('clickMe').onclick = function () {
 	var a = 'Leave me alone!'
 	console.log(a);
